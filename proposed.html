@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rough Drafts Book Club — Proposed Books</title>
+<style>
+  :root {
+    --ink: #2b2420;
+    --paper: #faf6ef;
+    --accent: #8a3324;
+    --muted: #7a7268;
+    --line: #e4dbc9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 24px 20px 56px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding: 14px 0 8px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 24px;
+  }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a.active {
+    color: var(--accent);
+    font-weight: bold;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 6px;
+  }
+  h1.club-title {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    margin: 0 0 4px;
+    color: var(--accent);
+  }
+  .eyebrow {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 30px;
+  }
+  .book-row {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .book-row:first-of-type { border-top: 1px solid var(--line); }
+  .book-row img {
+    width: 64px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    box-shadow: 0 4px 10px rgba(43,36,32,0.2);
+  }
+  .book-info { flex: 1; min-width: 0; }
+  .book-info h3 {
+    margin: 0 0 2px;
+    font-size: 17px;
+    line-height: 1.3;
+  }
+  .book-info p.author {
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .book-info a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 1px;
+  }
+  footer {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 30px;
+  }
+  .submit-block {
+    margin-bottom: 30px;
+  }
+  .btn-suggest {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    background: var(--accent);
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  .submit-note {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.5;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a href="index.html">Next Book</a>
+      <a href="proposed.html" class="active">Proposed</a>
+      <a href="previous.html">Previously Read</a>
+    </nav>
+
+    <h1 class="club-title">Rough Drafts Book Club</h1>
+    <p class="eyebrow">Proposed — Awaiting Selection</p>
+
+    <div class="submit-block">
+      <a class="btn-suggest" href="mailto:joeshealy+bookclub@gmail.com?subject=Book%20Club%20Suggestion" target="_blank" rel="noopener">Suggest a Book</a>
+      <p class="submit-note">We take suggestions by email instead of an open form, just to keep this page free of spam and bot junk.</p>
+    </div>
+
+    <div class="book-row">
+      <img src="https://covers.openlibrary.org/b/isbn/0451205766-M.jpg" alt="The Godfather cover">
+      <div class="book-info">
+        <h3>The Godfather</h3>
+        <p class="author">Mario Puzo (50th Anniversary Edition)</p>
+        <a href="https://www.amazon.com/dp/0451205766" target="_blank" rel="noopener">View on Amazon</a>
+      </div>
+    </div>
+
+    <div class="book-row">
+      <img src="https://covers.openlibrary.org/b/isbn/0671795899-M.jpg" alt="Lonesome Dove cover">
+      <div class="book-info">
+        <h3>Lonesome Dove</h3>
+        <p class="author">Larry McMurtry</p>
+        <a href="https://www.amazon.com/dp/0671795899" target="_blank" rel="noopener">View on Amazon</a>
+      </div>
+    </div>
+
+    <div class="book-row">
+      <img src="https://covers.openlibrary.org/b/isbn/0441172717-M.jpg" alt="Dune cover">
+      <div class="book-info">
+        <h3>Dune</h3>
+        <p class="author">Frank Herbert</p>
+        <a href="https://www.amazon.com/dp/0441172717" target="_blank" rel="noopener">View on Amazon</a>
+      </div>
+    </div>
+
+    <div class="book-row">
+      <img src="https://covers.openlibrary.org/b/isbn/0156027496-M.jpg" alt="Wind, Sand and Stars cover">
+      <div class="book-info">
+        <h3>Wind, Sand and Stars</h3>
+        <p class="author">Antoine de Saint-Exupéry</p>
+        <a href="https://www.amazon.com/dp/0156027496" target="_blank" rel="noopener">View on Amazon</a>
+      </div>
+    </div>
+
+    <div class="book-row">
+      <img src="https://covers.openlibrary.org/b/isbn/0142004235-M.jpg" alt="East of Eden cover">
+      <div class="book-info">
+        <h3>East of Eden</h3>
+        <p class="author">John Steinbeck (Centennial Edition)</p>
+        <a href="https://www.amazon.com/dp/0142004235" target="_blank" rel="noopener">View on Amazon</a>
+      </div>
+    </div>
+
+    <div class="book-row">
+      <img src="https://covers.openlibrary.org/b/isbn/0812968255-M.jpg" alt="Meditations cover">
+      <div class="book-info">
+        <h3>Meditations</h3>
+        <p class="author">Marcus Aurelius (trans. Gregory Hays)</p>
+        <a href="https://www.amazon.com/dp/0812968255" target="_blank" rel="noopener">View on Amazon</a>
+      </div>
+    </div>
+
+    <div class="book-row">
+      <img src="https://covers.openlibrary.org/b/isbn/0807014273-M.jpg" alt="Man's Search for Meaning cover">
+      <div class="book-info">
+        <h3>Man's Search for Meaning</h3>
+        <p class="author">Viktor E. Frankl</p>
+        <a href="https://www.amazon.com/dp/0807014273" target="_blank" rel="noopener">View on Amazon</a>
+      </div>
+    </div>
+
+    <footer>Approved suggestions get added here.</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rough Drafts Book Club — Next Up</title>
+<style>
+  :root {
+    --ink: #2b2420;
+    --paper: #faf6ef;
+    --accent: #8a3324;
+    --accent-dark: #6e2819;
+    --muted: #7a7268;
+    --line: #e4dbc9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 24px 20px 56px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding: 14px 0 8px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 28px;
+  }
+  nav a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  nav a.active {
+    color: var(--accent);
+    font-weight: bold;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 6px;
+  }
+  h1.club-title {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    margin: 0 0 4px;
+    color: var(--accent);
+  }
+  .eyebrow {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 32px;
+  }
+  .cover {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto 28px;
+    border-radius: 4px;
+    box-shadow: 0 12px 28px rgba(43,36,32,0.25);
+  }
+  h2.book-title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.25;
+    margin: 0 0 6px;
+  }
+  p.author {
+    text-align: center;
+    font-size: 17px;
+    color: var(--muted);
+    font-style: italic;
+    margin: 0 0 30px;
+  }
+  .details {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 28px;
+  }
+  .detail-row {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  .detail-row:last-child { border-bottom: none; }
+  .detail-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    width: 84px;
+    flex-shrink: 0;
+    padding-top: 2px;
+  }
+  .detail-value {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+  .note {
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+    margin: -18px 0 28px;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    margin-bottom: 14px;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: #fff;
+  }
+  .btn-primary:active { background: var(--accent-dark); }
+  .btn-secondary {
+    background: #fff;
+    color: var(--ink);
+    border: 1px solid var(--ink);
+  }
+  footer {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 36px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="active">Next Book</a>
+      <a href="proposed.html">Proposed</a>
+      <a href="previous.html">Previously Read</a>
+    </nav>
+
+    <h1 class="club-title">Rough Drafts Book Club</h1>
+    <p class="eyebrow">Reading Next</p>
+
+    <img class="cover" src="https://covers.openlibrary.org/b/isbn/0143109391-L.jpg" alt="Cover of Barbarian Days: A Surfing Life">
+
+    <h2 class="book-title">Barbarian Days</h2>
+    <p class="author">William Finnegan</p>
+
+    <div class="details">
+      <div class="detail-row">
+        <div class="detail-label">When</div>
+        <div class="detail-value">Thursday, August 20, 2026<br>7:00 PM <span style="color:var(--muted); font-style: italic;">(time to be confirmed)</span></div>
+      </div>
+      <div class="detail-row">
+        <div class="detail-label">Host</div>
+        <div class="detail-value">Chris Taylor</div>
+      </div>
+      <div class="detail-row">
+        <div class="detail-label">Where</div>
+        <div class="detail-value">1010 Colleton Way<br>Trent Woods, NC 28562</div>
+      </div>
+    </div>
+
+    <a class="btn btn-primary" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Book+Club%3A+Barbarian+Days&dates=20260820T190000/20260820T210000&details=Discussing+%22Barbarian+Days%3A+A+Surfing+Life%22+by+William+Finnegan.+Host%3A+Chris+Taylor.&location=1010+Colleton+Way%2C+Trent+Woods%2C+NC+28562&ctz=America/New_York" target="_blank" rel="noopener">Add to Google Calendar</a>
+    <a class="btn btn-secondary" href="https://www.amazon.com/dp/0143109391" target="_blank" rel="noopener">Buy on Amazon</a>
+
+    <footer>Next Thursday meeting normally falls on the 2nd Thursday — August is pushed back a week.</footer>
+  </div>
+</body>
+</html>
